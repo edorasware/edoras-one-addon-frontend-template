@@ -10,7 +10,7 @@ module.exports = {
     widget: './index.js'
   },
   output: {
-    path: path.join(__dirname, '..', '{{widgetNameHyphen}}',
+    path: path.join(__dirname, '..', '..', '{{widgetNameHyphen}}',
       'src', 'main', 'resources', 'com', 'edorasware', 'one', 'widgets'),
     filename: '{{widgetNameHyphen}}.js',
     library: 'edorasWidgetStarRating',
