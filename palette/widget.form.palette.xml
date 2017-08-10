@@ -12,7 +12,7 @@
   </component-presentations>
 
   <group id="edoras-addon">
-    <component id="{{widgetNameParamCase}}" extends="component" xmltag="edorasWidgetStarRating" presentation-id="{{widgetNameCamelCase}}.presentation" roles="core_form_controls">
+    <component id="{{widgetNameParamCase}}" extends="component" xmltag="{{widgetNameCamelCase}}" presentation-id="{{widgetNameCamelCase}}.presentation" roles="core_form_controls">
       <layout type="layout.form.controls" min-width="20" min-height="24" min-control-width="150" min-control-height="24" offset-x="10" offset-y="0"/>
       <attribute id="label" type="SimpleText" value="" runtime="false" readonly="false" path="label" category="common" index="1" optional="true" multilanguage="true" ref-to-view="label_text"/>
       <attribute id="value" type="SimpleText" value="" visible="false" runtime="false" readonly="false" path="value" category="common" index="2" optional="true" ref-to-view="input_text"/>
