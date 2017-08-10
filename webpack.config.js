@@ -13,7 +13,7 @@ module.exports = {
     path: path.join(__dirname, '..', '..', '{{widgetNameHyphen}}',
       'src', 'main', 'resources', 'com', 'edorasware', 'one', 'widgets'),
     filename: '{{widgetNameHyphen}}.js',
-    library: 'edorasWidgetStarRating',
+    library: '{{widgetNameCamelCase}}',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

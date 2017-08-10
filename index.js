@@ -6,6 +6,6 @@ import config from './src/configuration';
 window.edoras.configuration.widgets.register({
   config: config({}),
   module: module.name,
-  name: 'edorasWidgetStarRating',
+  name: '{{widgetNameCamelCase}}',
   type: window.edoras.configuration.widgets.types.get().COMPONENT
 });
