@@ -1,1 +1,1 @@
-# {{widgetNameTitleCase}} Addon Frontend
+# {{widgetNameTitleCase}} Addon (Frontend)
