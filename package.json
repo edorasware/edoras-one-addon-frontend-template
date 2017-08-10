@@ -1,5 +1,5 @@
 {
-  "name": "edoras-one-addon-frontend-template",
+  "name": "{{widgetNameHyphen}}",
   "version": "1.0.0",
   "description": "",
   "main": "./index.js",
