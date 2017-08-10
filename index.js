@@ -1,5 +1,5 @@
 import './scss/main.scss';
-import module from './src/edoras-widget-star-rating.module';
+import module from './src/widget.module';
 import config from './src/configuration';
 
 // register widget in view engine
