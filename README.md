@@ -1,1 +1,1 @@
-# edoras one Frontend Template
+# {{widgetNameTitleCase}} Addon Frontend

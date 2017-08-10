@@ -2,7 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 const extractSass = new ExtractTextPlugin({
-  filename: '{{widgetNameHyphen}}.css'
+  filename: '{{widgetNameParamCase}}.css'
 });
 
 module.exports = {
@@ -10,9 +10,9 @@ module.exports = {
     widget: './index.js'
   },
   output: {
-    path: path.join(__dirname, '..', '..', '{{widgetNameHyphen}}',
+    path: path.join(__dirname, '..', '..', '{{widgetNameParamCase}}',
       'src', 'main', 'resources', 'com', 'edorasware', 'one', 'widgets'),
-    filename: '{{widgetNameHyphen}}.js',
+    filename: '{{widgetNameParamCase}}.js',
     library: '{{widgetNameCamelCase}}',
     libraryTarget: 'umd',
     umdNamedDefine: true
