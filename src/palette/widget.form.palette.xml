@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette id="edoras-addon-form-palette"
+         resource-bundle="{{widgetNameParamCase}}.translation"
+         apply-patch-to-palette="edoras-one-form-palette"
+         xmlns="http://www.edorasware.com/schema/vis/palette"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.edorasware.com/schema/vis/palette
+                             http://www.edorasware.com/schema/vis/edoras-vis-form-palette-2.0.60.xsd">
+
+  <component-presentations base-palette-icon-path="icon" base-editor-view-path="component-presentations/view">
+    <component-presentation id="{{widgetNameCamelCase}}.presentation" palette-icon-path="{{widgetNameParamCase}}.icon.png"/>
+  </component-presentations>
+
+  <group id="edoras-addon">
+    <component id="{{widgetNameParamCase}}" extends="component" xmltag="edorasWidgetStarRating" presentation-id="{{widgetNameCamelCase}}.presentation" roles="core_form_controls">
+      <layout type="layout.form.controls" min-width="20" min-height="24" min-control-width="150" min-control-height="24" offset-x="10" offset-y="0"/>
+      <attribute id="label" type="SimpleText" value="" runtime="false" readonly="false" path="label" category="common" index="1" optional="true" multilanguage="true" ref-to-view="label_text"/>
+      <attribute id="value" type="SimpleText" value="" visible="false" runtime="false" readonly="false" path="value" category="common" index="2" optional="true" ref-to-view="input_text"/>
+      <attribute id="description" type="SimpleText" value="" runtime="false" readonly="false" category="common" index="3" optional="true" ref-to-view="desc_text"/>
+      <attribute id="col-span" type="Integer" value="" visible="false" readonly="false" path="size" category="common" optional="true"/>
+      <attribute id="editable" type="Boolean" value="true" visible="true" readonly="false" path="editable"/>
+      <attribute id="visible" type="Boolean" value="true" visible="true" readonly="false" path="isVisible" category="common" optional="yes" runtime="true"/>
+    </component>
+  </group>
+
+</palette>
