@@ -1,0 +1,7 @@
+<div class="stars-container" ng-class="{ 'disabled': !$ctrl.bindings.root.globalId }">
+  <input class="radio-buttons" ng-change="$ctrl.setRating()" ng-repeat-start="option in $ctrl.state.options" type="radio" ng-value="option" ng-model="$ctrl.state.data.ownRating" ng-disabled="{{!$ctrl.bindings.root.globalId}}"/>
+  <i class="icon" ng-repeat-end></i>
+</div>
+<div class="average-container" ng-if="$ctrl.state.data.count > 1">
+  Ø {{$ctrl.state.data.rating}} ({{$ctrl.state.data.count}})
+</div>
