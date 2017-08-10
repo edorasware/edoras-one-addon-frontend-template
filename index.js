@@ -1,5 +1,5 @@
 import './scss/main.scss';
-import module from './src/widget.module';
+import module from './src/{{widgetNameHyphen}}.module';
 import config from './src/configuration';
 
 // register widget in view engine
