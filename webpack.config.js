@@ -2,7 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 const extractSass = new ExtractTextPlugin({
-  filename: 'edoras-addon-star-rating.css'
+  filename: '{{widgetNameHyphen}}.css'
 });
 
 module.exports = {
@@ -10,9 +10,9 @@ module.exports = {
     widget: './index.js'
   },
   output: {
-    path: path.join(__dirname, '..', 'edoras-addon-star-rating',
+    path: path.join(__dirname, '..', '{{widgetNameHyphen}}',
       'src', 'main', 'resources', 'com', 'edorasware', 'one', 'widgets'),
-    filename: 'edoras-addon-star-rating.js',
+    filename: '{{widgetNameHyphen}}.js',
     library: 'edorasWidgetStarRating',
     libraryTarget: 'umd',
     umdNamedDefine: true
