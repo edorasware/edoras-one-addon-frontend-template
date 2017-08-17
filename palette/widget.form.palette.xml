@@ -15,16 +15,16 @@
     <component id="{{widgetNameParamCase}}" extends="component" presentation-id="{{widgetNameCamelCase}}.presentation" roles="core_form_controls" xmltag="{{widgetNameCamelCase}}">
       <layout min-width="20" min-control-height="24" min-control-width="150" min-height="24" type="layout.form.controls" offset-x="10" offset-y="0"/>
       <attribute id="label" category="common" index="1" multilanguage="true" path="label" ref-to-view="label_text" runtime="false" type="SimpleText" value=""/>
-      <attribute id="label-position" category="common" index="2" path="labelAlign" ref-to-view="" type="ComboBox" value="left">
+      <attribute id="labelPosition" category="common" index="2" path="labelAlign" ref-to-view="" type="ComboBox" value="left">
         <items>
-          <item id="left" title="{{widgetNameParamCase}}.label-position.items.left.title" value="left" ref-to-view="none"/>
-          <item id="top" title="{{widgetNameParamCase}}.label-position.items.top.title" value="top" ref-to-view="none"/>
+          <item id="left" title="{{widgetNameParamCase}}.labelPosition.items.left.title" value="left" ref-to-view="none"/>
+          <item id="top" title="{{widgetNameParamCase}}.labelPosition.items.top.title" value="top" ref-to-view="none"/>
         </items>
       </attribute>
       <attribute id="value" category="common" index="3" path="value" ref-to-view="input_text" runtime="false" type="SimpleText" value=""/>
       <attribute id="default-value" category="common" index="4" path="defaultValue" value=""/>
       <attribute id="description" category="common" index="5" multilanguage="true" path="helpMessage.text" ref-to-view="desc_text" runtime="false" type="SimpleText" value=""/>
-      <attribute id="documentation" category="common" index="6" multilanguage="false" optional="true" type="RichText"/>
+      <attribute id="documentation" category="common" index="6" multilanguage="false" type="RichText"/>
       <attribute id="col-span" category="common" index="7" path="size" type="Integer" value="" visible="false"/>
       <attribute id="visible" category="common" index="8" optional="yes" path="isVisible" runtime="true" type="Boolean" value="true"/>
       <attribute id="editable" category="common" index="9" path="editable" runtime="true" type="Boolean" value="true"/>
