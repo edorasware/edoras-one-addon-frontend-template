@@ -1,7 +1,7 @@
 <div class="input-group">
-  <input class="form-control" ng-disabled="!$ctrl.editable" ng-model="$ctrl.value" type="text">
+  <input class="form-control" ng-disabled="!$ctrl.editable || $ctrl.state.isExecuting" ng-model="$ctrl.value" type="text">
   <span class="input-group-btn">
-    <button class="e-action-button" ng-class="{'disabled': !$ctrl.editable}" ng-click="$ctrl.loadData()" ng-disabled="!$ctrl.editable">
+    <button class="e-action-button" ng-class="{'disabled': !$ctrl.editable || $ctrl.state.isExecuting, 'spinnerLoading': $ctrl.state.isExecuting}" ng-click="$ctrl.loadData()" ng-disabled="!$ctrl.editable">
       Load Data
     </button>
   </span>

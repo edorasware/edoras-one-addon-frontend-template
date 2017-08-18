@@ -6,7 +6,9 @@ export default class {{widgetNameCamelCase}}Controller {
     this.$scope = $scope;
     this.{{widgetNameCamelCase}}Service = {{widgetNameCamelCase}}Service;
 
-    this.state = {};
+    this.state = {
+      isExecuting: false
+    };
 
     this.$onInit = () => {
       this.initialize();
@@ -29,7 +31,9 @@ export default class {{widgetNameCamelCase}}Controller {
    * loadData :: undefined -> undefined
    */
   loadData() {
+    this.state.isExecuting = true;
     this.edorasAddonStarRatingService.loadData('1').then((response) => {
+      this.state.isExecuting = false;
       this.value = response.data.name;
     });
   }
