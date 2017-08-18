@@ -29,7 +29,9 @@ export default class {{widgetNameCamelCase}}Controller {
    * loadData :: undefined -> undefined
    */
   loadData() {
-    console.log('Load data...');
+    this.edorasAddonStarRatingService.loadData('1').then((response) => {
+      this.value = response.data.name;
+    });
   }
 
   /**
