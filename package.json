@@ -4,8 +4,8 @@
   "description": "",
   "main": "./index.js",
   "scripts": {
-    "build": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --colors",
-    "develop": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --colors --watch"
+    "dist": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --colors",
+    "serve": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --colors --watch"
   },
   "author": "edorasware AG",
   "license": "Apache-2.0",
