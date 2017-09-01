@@ -1,6 +1,6 @@
 'use strict';
 
-import adaptersFactory from './adapters/{{widgetNameParamCase}}.edorasone.adapter';
+import adaptersFactory from './adapters/{{widgetNameParamCase}}.adapter';
 
 export default (options) => {
   return {
