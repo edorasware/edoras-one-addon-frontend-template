@@ -1,7 +1,7 @@
 # {{widgetNameTitleCase}} Addon (Frontend)
 
 ## Requirements
-* Node.js 6+
+* Node.js 6 (LTS)
 
 ## Commands
 * Run `npm run dist` to create the bundle for production.
