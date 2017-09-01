@@ -1,7 +1,7 @@
 'use strict';
 
-import {{widgetNameCamelCase}}Controller from './{{widgetNameParamCase}}.controller';
-import {{widgetNameCamelCase}}Template from './{{widgetNameParamCase}}.tpl.html';
+import {{widgetNameFullCamelCase}}Controller from './{{widgetNameFullParamCase}}.controller';
+import {{widgetNameFullCamelCase}}Template from './{{widgetNameFullParamCase}}.tpl.html';
 
 export default {
   bindings: {
@@ -12,6 +12,6 @@ export default {
     metadata: '<ecMetadata',
     value: '=ngModel'
   },
-  controller: {{widgetNameCamelCase}}Controller,
-  template: {{widgetNameCamelCase}}Template
+  controller: {{widgetNameFullCamelCase}}Controller,
+  template: {{widgetNameFullCamelCase}}Template
 };

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <palette id="edoras-addon-form-palette"
-         resource-bundle="{{widgetNameParamCase}}.translation"
+         resource-bundle="{{widgetNameFullParamCase}}.translation"
          apply-patch-to-palette="edoras-one-form-palette"
          xmlns="http://www.edorasware.com/schema/vis/palette"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -8,17 +8,17 @@
                              http://www.edorasware.com/schema/vis/edoras-vis-form-palette-2.0.60.xsd">
 
   <component-presentations base-editor-view-path="component-presentations/view" base-palette-icon-path="icon">
-    <component-presentation id="{{widgetNameCamelCase}}.presentation" palette-icon-path="{{widgetNameParamCase}}.icon.png"/>
+    <component-presentation id="{{widgetNameFullCamelCase}}.presentation" palette-icon-path="{{widgetNameFullParamCase}}.icon.png"/>
   </component-presentations>
 
   <group id="edoras-addon">
-    <component id="{{widgetNameParamCase}}" extends="component" presentation-id="{{widgetNameCamelCase}}.presentation" roles="core_form_controls" xmltag="{{widgetNameCamelCase}}">
+    <component id="{{widgetNameFullParamCase}}" extends="component" presentation-id="{{widgetNameFullCamelCase}}.presentation" roles="core_form_controls" xmltag="{{widgetNameFullCamelCase}}">
       <layout min-width="20" min-control-height="24" min-control-width="150" min-height="24" type="layout.form.controls" offset-x="10" offset-y="0"/>
       <attribute id="label" category="common" index="1" multilanguage="true" path="label" ref-to-view="label_text" runtime="false" type="SimpleText" value=""/>
       <attribute id="labelPosition" category="common" index="2" path="labelAlign" ref-to-view="" type="ComboBox" value="left">
         <items>
-          <item id="left" title="{{widgetNameParamCase}}.labelPosition.items.left.title" value="left" ref-to-view="none"/>
-          <item id="top" title="{{widgetNameParamCase}}.labelPosition.items.top.title" value="top" ref-to-view="none"/>
+          <item id="left" title="{{widgetNameFullParamCase}}.labelPosition.items.left.title" value="left" ref-to-view="none"/>
+          <item id="top" title="{{widgetNameFullParamCase}}.labelPosition.items.top.title" value="top" ref-to-view="none"/>
         </items>
       </attribute>
       <attribute id="value" category="common" index="3" path="value" ref-to-view="input_text" runtime="false" type="SimpleText" value=""/>

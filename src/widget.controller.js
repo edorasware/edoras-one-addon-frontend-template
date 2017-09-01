@@ -1,10 +1,10 @@
 'use strict';
 
-export default class {{widgetNameCamelCase}}Controller {
+export default class {{widgetNameFullCamelCase}}Controller {
 
-  constructor($scope, {{widgetNameCamelCase}}Service) {
+  constructor($scope, {{widgetNameFullCamelCase}}Service) {
     this.$scope = $scope;
-    this.{{widgetNameCamelCase}}Service = {{widgetNameCamelCase}}Service;
+    this.{{widgetNameFullCamelCase}}Service = {{widgetNameFullCamelCase}}Service;
 
     this.state = {
       isExecuting: false
@@ -50,7 +50,7 @@ export default class {{widgetNameCamelCase}}Controller {
 
 }
 
-{{widgetNameCamelCase}}Controller.$inject = [
+{{widgetNameFullCamelCase}}Controller.$inject = [
   '$scope',
-  '{{widgetNameCamelCase}}Service'
+  '{{widgetNameFullCamelCase}}Service'
 ];

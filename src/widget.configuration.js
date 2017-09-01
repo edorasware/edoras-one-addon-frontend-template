@@ -1,12 +1,12 @@
 'use strict';
 
-import adaptersFactory from './adapters/{{widgetNameParamCase}}.adapter';
+import adaptersFactory from './adapters/{{widgetNameFullParamCase}}.adapter';
 
 export default (options) => {
   return {
     adapters: adaptersFactory(options),
     template: `
-      <{{widgetNameParamCase}}
+      <{{widgetNameFullParamCase}}
         id="{{columnMetadata.id}}"
         configuration="columnMetadata.configuration"
         ec-bindings="columnBindings"
@@ -14,7 +14,7 @@ export default (options) => {
         ec-metadata="columnMetadata"
         ew-editable
         ng-model>
-      </{{widgetNameParamCase}}>
+      </{{widgetNameFullParamCase}}>
     `
   };
 };

@@ -1,9 +1,9 @@
 'use strict';
 
-import {{widgetNamePascalCase}}Component from './{{widgetNameParamCase}}.component';
-import {{widgetNamePascalCase}}Service from './{{widgetNameParamCase}}.service';
+import {{widgetNameFullPascalCase}}Component from './{{widgetNameFullParamCase}}.component';
+import {{widgetNameFullPascalCase}}Service from './{{widgetNameFullParamCase}}.service';
 
 export default angular
-  .module('{{widgetNameCamelCase}}Module', [])
-  .component('{{widgetNameCamelCase}}', {{widgetNamePascalCase}}Component)
-  .service('{{widgetNameCamelCase}}Service', {{widgetNamePascalCase}}Service);
+  .module('{{widgetNameFullCamelCase}}Module', [])
+  .component('{{widgetNameFullCamelCase}}', {{widgetNameFullPascalCase}}Component)
+  .service('{{widgetNameFullCamelCase}}Service', {{widgetNameFullPascalCase}}Service);

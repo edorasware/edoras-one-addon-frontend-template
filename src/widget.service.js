@@ -1,6 +1,6 @@
 'use strict';
 
-export default class {{widgetNameCamelCase}}Service {
+export default class {{widgetNameFullCamelCase}}Service {
 
   constructor($http, $q) {
     this.$http = $http;
@@ -19,7 +19,7 @@ export default class {{widgetNameCamelCase}}Service {
 
 }
 
-{{widgetNameCamelCase}}Service.$inject = [
+{{widgetNameFullCamelCase}}Service.$inject = [
   '$http',
   '$q'
 ];
