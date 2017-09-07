@@ -1,7 +1,7 @@
 'use strict';
 
-import {{widgetNameFullCamelCase}}Controller from './{{widgetNameFullParamCase}}.controller';
-import {{widgetNameFullCamelCase}}Template from './{{widgetNameFullParamCase}}.tpl.html';
+import {{widgetNameFullCamelCase}}Controller from './{{widgetNameParamCase}}.controller';
+import {{widgetNameFullCamelCase}}Template from './{{widgetNameParamCase}}.tpl.html';
 
 export default {
   bindings: {

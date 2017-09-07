@@ -1,7 +1,7 @@
 'use strict';
 
-import {{widgetNameFullPascalCase}}Component from './{{widgetNameFullParamCase}}.component';
-import {{widgetNameFullPascalCase}}Service from './{{widgetNameFullParamCase}}.service';
+import {{widgetNameFullPascalCase}}Component from './{{widgetNameParamCase}}.component';
+import {{widgetNameFullPascalCase}}Service from './{{widgetNameParamCase}}.service';
 
 export default angular
   .module('{{widgetNameFullCamelCase}}Module', [])
