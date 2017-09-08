@@ -12,7 +12,6 @@ export default (options) => {
         ec-bindings="columnBindings"
         ec-data="columnData"
         ec-metadata="columnMetadata"
-        ew-editable
         ng-model>
       </{{widgetNameFullParamCase}}>
     `
