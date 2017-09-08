@@ -2,8 +2,7 @@
 
 export default class {{widgetNameFullCamelCase}}Controller {
 
-  constructor($scope, {{widgetNameFullCamelCase}}Service) {
-    this.$scope = $scope;
+  constructor({{widgetNameFullCamelCase}}Service) {
     this.{{widgetNameFullCamelCase}}Service = {{widgetNameFullCamelCase}}Service;
 
     this.state = {
@@ -51,6 +50,5 @@ export default class {{widgetNameFullCamelCase}}Controller {
 }
 
 {{widgetNameFullCamelCase}}Controller.$inject = [
-  '$scope',
   '{{widgetNameFullCamelCase}}Service'
 ];

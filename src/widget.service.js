@@ -2,9 +2,8 @@
 
 export default class {{widgetNameFullCamelCase}}Service {
 
-  constructor($http, $q) {
+  constructor($http) {
     this.$http = $http;
-    this.$q = $q;
 
     this.API = 'https://jsonplaceholder.typicode.com';
   }
@@ -20,6 +19,5 @@ export default class {{widgetNameFullCamelCase}}Service {
 }
 
 {{widgetNameFullCamelCase}}Service.$inject = [
-  '$http',
-  '$q'
+  '$http'
 ];
