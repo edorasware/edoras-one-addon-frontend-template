@@ -21,12 +21,12 @@
           <item id="top" title="{{widgetNameFullParamCase}}.labelPosition.items.top.title" value="top" ref-to-view="none"/>
         </items>
       </attribute>
-      <attribute id="value" category="common" index="3" path="value" ref-to-view="input_text" runtime="false" type="SimpleText" value=""/>
+      <attribute id="value" category="common" index="3" optional="false" path="value" ref-to-view="input_text" runtime="false" type="SimpleText" value=""/>
       <attribute id="default-value" category="common" index="4" path="defaultValue" value=""/>
       <attribute id="description" category="common" index="5" multilanguage="true" path="helpMessage.text" ref-to-view="desc_text" runtime="false" type="SimpleText" value=""/>
       <attribute id="documentation" category="common" index="6" multilanguage="false" type="RichText"/>
       <attribute id="col-span" category="common" index="7" path="size" type="Integer" value="" visible="false"/>
-      <attribute id="visible" category="common" index="8" optional="yes" path="isVisible" runtime="true" type="Boolean" value="true"/>
+      <attribute id="visible" category="common" index="8" path="isVisible" runtime="true" type="Boolean" value="true"/>
       <attribute id="editable" category="common" index="9" path="editable" runtime="true" type="Boolean" value="true"/>
     </component>
   </group>
