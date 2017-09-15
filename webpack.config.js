@@ -10,7 +10,7 @@ module.exports = {
     widget: './index.js'
   },
   output: {
-    path: path.join(__dirname, '..', '..', '{{widgetNameFullParamCase}}',
+    path: path.join(__dirname, '..', '..', '{{widgetNameOriginal}}',
       'src', 'main', 'resources', 'com', 'edorasware', 'one', 'widgets'),
     filename: '{{widgetNameFullParamCase}}.js',
     library: '{{widgetNameFullCamelCase}}',
