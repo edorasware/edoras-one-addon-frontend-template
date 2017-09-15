@@ -31,7 +31,7 @@ export default class {{widgetNameFullCamelCase}}Controller {
    */
   loadData() {
     this.state.isExecuting = true;
-    this.edorasAddonStarRatingService.loadData('1').then((response) => {
+    this.{{widgetNameFullCamelCase}}Service.loadData('1').then((response) => {
       this.state.isExecuting = false;
       this.value = response.data.name;
     });
