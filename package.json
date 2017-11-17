@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "edoras-commons": "0.21.0",
-    "lodash": "4.17.4"
+    "lodash.isstring": "4.0.1"
   }
 }

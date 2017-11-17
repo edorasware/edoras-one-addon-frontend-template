@@ -1,7 +1,7 @@
 'use strict';
 
 import expressionServiceFactory from 'edoras-commons/expression-service';
-import { isString } from 'lodash';
+import isString from 'lodash.isstring';
 
 export default (options) => {
   const expressionService = options.expressionService || expressionServiceFactory();
