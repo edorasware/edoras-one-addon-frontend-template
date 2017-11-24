@@ -1,8 +1,10 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
+const fileName = '{{widgetNameFullParamCase}}';
+
 const extractSass = new ExtractTextPlugin({
-  filename: '{{widgetNameFullParamCase}}.css'
+  filename: fileName + '.css'
 });
 
 module.exports = {
@@ -12,7 +14,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '..', '..', '{{widgetNameOriginal}}',
       'src', 'main', 'resources', 'com', 'edorasware', 'one', 'widgets'),
-    filename: '{{widgetNameFullParamCase}}.js',
+    filename: fileName + '.js',
     library: '{{widgetNameFullCamelCase}}',
     libraryTarget: 'umd',
     umdNamedDefine: true
