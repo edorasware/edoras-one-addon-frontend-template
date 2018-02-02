@@ -5,9 +5,9 @@
          xmlns="http://www.edorasware.com/schema/vis/palette"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.edorasware.com/schema/vis/palette
-                             http://www.edorasware.com/schema/vis/edoras-vis-form-palette-2.0.60.xsd">
+                             http://www.edorasware.com/schema/vis/edoras-vis-form-palette-2.0.61.xsd">
 
-  <component-presentations base-editor-view-path="component-presentations/view" base-palette-icon-path="icon">
+  <component-presentations base-editor-view-path="component-presentations/view" base-palette-icon-path="component-presentations/palette-icons">
     <component-presentation id="{{widgetNameFullCamelCase}}.presentation" palette-icon-path="{{widgetNameFullParamCase}}.icon.png"/>
   </component-presentations>
 
