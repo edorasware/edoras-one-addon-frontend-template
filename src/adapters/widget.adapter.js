@@ -4,7 +4,12 @@ import expressionServiceFactory from 'edoras-commons/expression-service';
 import isString from 'lodash.isstring';
 
 export default (options) => {
-  const expressionService = options.expressionService || expressionServiceFactory();
+  const expressionService = options.expressionService || expressionServiceFactory({
+    root: 'columnBindings.root',
+    self: 'columnBindings.self',
+    parent: 'columnBindings.parent',
+    $temp: 'columnBindings.$temp'
+  });
 
   return {
     metadataAdapter: (columnModel) => {
