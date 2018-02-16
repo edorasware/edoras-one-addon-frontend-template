@@ -1,7 +1,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
-const fileName = '{{widgetNameFullParamCase}}';
+const fileName = 'edoras-addon-{{widgetNameParamCase}}';
 
 const extractSass = new ExtractTextPlugin({
   filename: fileName + '.css'
